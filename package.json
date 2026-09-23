@@ -1,6 +1,6 @@
 {
   "name": "agentfile",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Answer the accountability question about your organisation in ninety seconds.",
   "license": "Apache-2.0",
   "author": "Flashy Labs",
@@ -14,18 +14,18 @@
   "engines": {
     "node": ">=20"
   },
-  "bin": {
-    "agentfile": "./src/cli.mjs"
-  },
-  "exports": {
-    ".": "./src/index.mjs"
-  },
+  "keywords": [
+    "agents",
+    "ai-agents",
+    "manifest",
+    "interoperability",
+    "discovery",
+    "agent-card",
+    "a2a",
+    "agents-txt"
+  ],
   "files": [
-    "src",
     "README.md",
     "LICENSE"
-  ],
-  "scripts": {
-    "test": "node -e \"import('./src/index.mjs')\""
-  }
+  ]
 }
