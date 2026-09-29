@@ -1,0 +1,80 @@
+{
+  "contract": "directory/1",
+  "generated": "2026-09-29",
+  "org": "org/agentfile",
+  "nodes": [
+    {
+      "id": "org/agentfile",
+      "kind": "org",
+      "name": "Agentfile"
+    },
+    {
+      "id": "person/michael",
+      "kind": "person",
+      "name": "Michael Gord"
+    },
+    {
+      "id": "agent/agentfile-canon",
+      "kind": "agent",
+      "name": "canon",
+      "for": "org/agentfile"
+    },
+    {
+      "id": "agent/agentfile-conformance",
+      "kind": "agent",
+      "name": "conformance",
+      "for": "org/agentfile"
+    },
+    {
+      "id": "agent/agentfile-release",
+      "kind": "agent",
+      "name": "release",
+      "for": "org/agentfile"
+    },
+    {
+      "id": "agent/agentfile-adoption",
+      "kind": "agent",
+      "name": "adoption",
+      "for": "org/agentfile"
+    },
+    {
+      "id": "agent/agentfile-review",
+      "kind": "agent",
+      "name": "review",
+      "for": "org/agentfile"
+    }
+  ],
+  "edges": [
+    {
+      "from": "org/agentfile",
+      "rel": "staffs",
+      "to": "agent/agentfile-canon",
+      "by": "person/michael"
+    },
+    {
+      "from": "org/agentfile",
+      "rel": "staffs",
+      "to": "agent/agentfile-conformance",
+      "by": "person/michael"
+    },
+    {
+      "from": "org/agentfile",
+      "rel": "staffs",
+      "to": "agent/agentfile-release",
+      "by": "person/michael"
+    },
+    {
+      "from": "org/agentfile",
+      "rel": "staffs",
+      "to": "agent/agentfile-adoption",
+      "by": "person/michael"
+    },
+    {
+      "from": "org/agentfile",
+      "rel": "staffs",
+      "to": "agent/agentfile-review",
+      "by": "person/michael"
+    }
+  ],
+  "x-note": "Five agents, one per charter role. Generated from flashyos.roles.json; a live org is provisioned from the charter with provision-org-from-charter."
+}
