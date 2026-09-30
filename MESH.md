@@ -1,6 +1,6 @@
 # On the FlashyOS mesh
 
-Agentfile is a specification on the FlashyOS mesh — a wire format published with a dependency-free checker, its conformance corpus and its versioned releases.
+Agentfile is a dependency-free CLI scaffolder on the FlashyOS mesh. From a few answers it writes the estate's existing accountability contracts — `flashyos-charter.json`, `flashyos.json` and `frontdoor.json` — to well-known paths, so an organisation can state who is accountable for the agents it runs without inventing a new format.
 
 Its AAO charter is [`flashyos.roles.json`](flashyos.roles.json) — the single source the mesh
 handshake and the directory fragment derive from, so two hand-written files can
@@ -8,11 +8,11 @@ never disagree. It declares **five roles**, and five roles are five agents:
 
 | Role | Family | Human approval at/above | What it is accountable for |
 |---|---|---|---|
-| `canon` | governance | HIGH | Publishes and maintains the normative specification — the schema, the conformance corpus and the dependency-free checker. |
-| `conformance` | engineering | LOW | Runs the checker and the conformance vectors against every change, and reports which cases a fragment passes rather than a green tick that read nothing. |
-| `release` | operations | MEDIUM | Cuts versioned releases with a changelog entry, so a version says what the package will refuse and never moves once it ships. |
-| `adoption` | growth | LOW | Helps an independent adopter reach conformance and records real uptake, because a spec is a standard only after the first adopter and never before. |
-| `review` | risk | HIGH | Reviews a normative change proposal before it lands, because a change to what a valid document is breaks every adopter downstream. |
+| `canon` | governance | HIGH | Maintains the scaffolder and the mapping from an organisation's answers to the estate's existing contracts — the charter, the mesh handshake and the front door. A file it writes is valid against the format that owns it, refused rather than guessed. |
+| `conformance` | engineering | LOW | Runs the estate's dependency-free checkers against the files the CLI generates, and reports which contracts a run passes rather than a green tick that read nothing. |
+| `release` | operations | MEDIUM | Cuts versioned releases of the CLI with a changelog entry, so a version says what the scaffolder will refuse and never moves once it ships. |
+| `adoption` | growth | LOW | Helps an organisation answer the accountability question and reach conformance on the files it publishes, because a scaffolder earns its place only when a real adopter's files pass — never before. |
+| `review` | risk | HIGH | Reviews a change to what the scaffolder writes before it lands, because a change to a generated contract's shape breaks every organisation that already published one. |
 
 The charter validates against the estate's dependency-free AAO checker:
 

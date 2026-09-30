@@ -1,6 +1,6 @@
 {
   "name": "agentfile",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Answer the accountability question about your organisation in ninety seconds.",
   "license": "Apache-2.0",
   "author": "Flashy Labs",
@@ -14,15 +14,19 @@
   "engines": {
     "node": ">=20"
   },
+  "scripts": {
+    "test": "node --test"
+  },
   "keywords": [
-    "agents",
     "ai-agents",
-    "manifest",
-    "interoperability",
-    "discovery",
-    "agent-card",
-    "a2a",
-    "agents-txt"
+    "accountability",
+    "governance",
+    "aao",
+    "cli",
+    "scaffolder",
+    "well-known",
+    "charter",
+    "frontdoor"
   ],
   "files": [
     "README.md",
